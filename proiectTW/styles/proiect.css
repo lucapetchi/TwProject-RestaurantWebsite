@@ -5,7 +5,7 @@
 body{
     background-image:url(/images/vecteezy_hand-drawn-vegetables-seamless-pattern-vegan-food_5490026.jpg);
     font-family: 'Roboto', sans-serif;
-    min-height: 100vh;
+    
   
 }
 .header{
@@ -87,4 +87,171 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   position: absolute;
   display: block;
+}
+.pizzdr{
+  position:relative;
+}
+.poza-titlu{
+  width:100%;
+  margin:none;
+  margin-bottom:none;
+  display:grid;
+  
+
+}
+.scris-titlu{
+  position:absolute;
+  top: 65%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size:80px;
+  color:white;
+  font-family:monospace;
+  opacity:100%;
+  margin-bottom:40px;
+  display:flex;
+  justify-content:space-between;
+  
+
+}
+.scris-titlu-mic{
+  position:absolute;
+  font-family:monospace;
+  opacity:60%;
+  font-size:25px;
+  top: 75%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+#despre{
+  background-color:white;
+  display:grid;
+  font-family:monospace;
+  
+}
+.despre-box{
+  place-items: center;
+  align-content: center;
+  display:grid;
+}
+.titlu-despre{
+  font-size:30px;
+}
+.text-despre{
+  font-size:18px;
+}
+.buton-afla{
+  font-size: max(18px, 1.2vw);
+  color: black;
+  margin: 2em 5em;
+  padding: 0.6em 1.6em;
+  border: 3px solid #2e6a55;
+  display: inline-flex;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.buton-afla:hover {
+
+  background-color: rgb(46, 106, 85, 0.8);
+  color: rgb(255, 255, 255);
+}
+.container-footer{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.text-footer{
+  margin-top:none;
+}
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  height: 18vh;
+  display: flex;
+  align-items: center;
+}
+.iconite a{
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.titlu-contact{
+  display:block;
+  background-color:white;
+  opacity:90%;
+  height:100px;
+  margin:0 ;
+}
+.titlu-contact p{
+  margin-top:0;
+  font-family:monospace;
+  font-size:40px;
+  margin-bottom:0;
+  margin-left:70px;
+  
+}
+.container-contact{
+  background-color:white;
+  opacity:90%;
+  margin:0;
+}
+.container-contact p{
+  font-family:monospace;
+  font-size:15px;
+  margin-top:0;
+  margin-bottom:0;
+  margin-left:20px;
+}
+.container-harta{
+  background-color:white;
+  opacity:90%;
+  position:relative;
+  
+}
+.harta img{
+  position:absolute;
+  
+  
+}
+.despre-container-titlu{
+  background-color:white;
+  margin:0;
+  height:120px;
+  opacity:90%;
+  
+}
+.despre-container-titlu p{
+  margin-top:0px;
+  padding-top:40px;
+  font-size:50px;
+  font-family:monospace;
+  margin-left:37%;
+}
+.poza-pasta2{
+  width:100%;
+  height:250px;
+  margin:0;
+  
+}
+.poze-paste{
+  width:100%;
+  margin:0;
+  background-color:white;
+}
+.despre-container-continut{
+  align-items:center;
+  background-color:white;
+  opacity:90%;
+  height:auto;
+  padding:40px;
+}
+.despre-container-continut p{
+  font-family:monospace;
+  font-size:20px;
+  text-align:center;
+  line-height:2;
+
 }
