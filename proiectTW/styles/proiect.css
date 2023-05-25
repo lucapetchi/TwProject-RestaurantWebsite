@@ -4,7 +4,7 @@
 }
 body{
     background-image:url(/images/vecteezy_hand-drawn-vegetables-seamless-pattern-vegan-food_5490026.jpg);
-    font-family: 'Roboto', sans-serif;
+    font-family: monospace;
     
   
 }
@@ -80,6 +80,32 @@ li.dropdown {
   display: block;
   text-align: left;
   font-size: medium;
+}
+.cart-link {
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-icon {
+  position:relative;
+  width:50px;
+}
+
+
+
+.cart-quantity {
+  color: red;
+  font-size: 30px;
+  font-weight: 700;
+
+  position: absolute;
+  top: 4px;
+  left: 22px;
+  
+  width: 26px;
+  text-align: right;
 }
 
 .dropdown-content a:hover {background-color: white;}
@@ -159,6 +185,7 @@ li.dropdown {
 }
 .container-footer{
   max-width: 960px;
+  display:block;
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
@@ -254,4 +281,133 @@ footer {
   text-align:center;
   line-height:2;
 
+}
+
+
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+
+@media (max-width: 2000px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1600px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1300px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-container {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  
+  border: 5px solid rgb(231, 231, 231);
+  margin:5px;
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+  
+}
+
+.product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:400px;
+  height: 180px;
+  margin-bottom: 20px;
+  background-color:white;
+}
+
+.product-image {
+  /* Images will overflow their container by default. To
+    prevent this, we set max-width and max-height to 100%
+    so they stay inside their container. */
+  max-width: 100%;
+  max-height: 100%;
+  
+}
+
+.product-name {
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+
+
+.product-price {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.product-quantity-container {
+  margin-bottom: 17px;
+}
+
+.product-spacer {
+  flex: 1;
+}
+
+
+.add-to-cart-button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+  transition: 0.2s;
+  
+}
+.add-to-cart-button:hover{
+  background-color:red;
+  transition: 0.2s;
+}
+.drinks{
+  display:block;
+  color:transparent;
+}
+.titlu-meniu{
+  background-color:white;
+  display:block;
+  width:97%;
+  text-align:center;
+  padding:20px;
+  border: 5px solid black;
+  font-size:20px;
 }

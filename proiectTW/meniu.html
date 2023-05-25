@@ -2,11 +2,14 @@
 <html>
     <head>
         <script src="https://kit.fontawesome.com/fcbd27cd8a.js" crossorigin="anonymous"></script>
-        <title>Acasa</title>
+        <title>Meniu</title>
         <link rel="stylesheet" href="styles/proiect.css">
+        <link rel="icon" href="images/pizza3.png" type="image/x-icon">
+
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
+
           <div class="header"> 
             <div class="logo2">
               <img class="logo-img" src="images/pizza3.png" alt="">
@@ -18,18 +21,31 @@
                 <li class="dropdown">
                   <a class="dropbtn">Meniu</a>
                   <div class="dropdown-content">
-                    <a href="meniu.html">Pizza</a>
-                    <a href="meniu.html">Pasta</a>
-                    <a href="meniu.html">Drinks</a>
+                    <a href="meniu.html#refp">Pizza</a>
+                    <a href="meniu.html#refd">Drinks</a>
                   </div>
                 </li>
                 <li><a href="despre.html">despre noi</a></li>
                 <li><a href="contact.html">contact</a></li>
+                <li><a class="cart-link header-link" href="checkout.html">
+                  <img class="cart-icon" src="images/cos.jpg">
+                  <div class="cart-quantity js-cart-quantity">0</div>
+                  
+                </a>
+              </li>
+
               </ul>
             </div>
           </div>
           <!-- cont -->
+          <h2 class="titlu-meniu" id="refp">Pizza</h2>
+          <div class="products-grid js-products-grid">
+           </div>
+          <h2 class="drinks" id="refd">drinks</h2>
         
+        
+           
+
         <footer>
           <div class="container-footer">
             <p class="text-footer">&copy; Trattoria Buongiorno. All rights reserved.</p>
@@ -44,6 +60,7 @@
           
           
           
-        <!-- <input class="search-bar" type="text" placeholder="Search"> -->
+        
+        <script src="scripts/meniu.js"></script>
     </body>
 </html>
